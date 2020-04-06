@@ -1,0 +1,35 @@
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+  <modelVersion>4.0.0</modelVersion>
+  <parent>
+    <groupId>pe.com.claro</groupId>
+    <artifactId>claro-post-validacuentasva</artifactId>
+    <version>1.0.0</version>
+  </parent>
+  <artifactId>claro-post-validacuentasva-domain</artifactId>
+  <name>claro-post-validacuentasva-domain</name>
+<properties>
+    <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+    <claro.post.validacuentasva.model>1.0.0</claro.post.validacuentasva.model>
+    <claro.post.validacuentasva.canonical>1.0.0</claro.post.validacuentasva.canonical>
+  </properties>
+
+	<dependencies>
+		<dependency>
+			<groupId>pe.com.claro</groupId>
+			<artifactId>claro-post-validacuentasva-canonical</artifactId>
+      <version>${claro.post.validacuentasva.canonical}</version>
+		</dependency>
+		<dependency>
+			<groupId>pe.com.claro</groupId>
+			<artifactId>claro-post-validacuentasva-model</artifactId>
+			<version>${claro.post.validacuentasva.model}</version>
+		</dependency>
+<dependency>
+      <groupId>oracle</groupId>
+      <artifactId>ojdbc6</artifactId>
+      <version>11.2.0.3</version>
+      <scope>system</scope>
+      <systemPath>${basedir}/lib/ojdbc6-11.2.0.3.jar</systemPath>
+    </dependency>
+	</dependencies>
+</project>
